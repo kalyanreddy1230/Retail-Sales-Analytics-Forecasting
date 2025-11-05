@@ -1,4 +1,4 @@
-# 🛍️ Retail Sales Analytics & Forecasting — End-to-End Data Engineering Project
+# Retail Sales Analytics & Forecasting — End-to-End Data Engineering Project
 
 **Author:** Kalyan Reddy  
 **Date:** 2025-11-04  
