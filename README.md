@@ -149,15 +149,7 @@ graph TD
 
 ## 📊 Power BI Analytics & Visualization
 
-| Page | Purpose | Key Visuals |
-|------|----------|-------------|
-| **Home Summary** | Executive KPI overview | Sales, Profit, Quantity, Margin |
-| **Regional Insights** | Sales by region/state | Heatmap & Bar Charts |
-| **Customer Analytics** | Segment trends | Top 10 Customers |
-| **Product Insights** | Product performance | Category TreeMap |
-| **Monthly Trends** | Sales & profit over time | Year-Month Line |
-| **Shipping Performance** | Mode comparison | Ship Mode Profit |
-| **Forecasting** | Predictive view | Next-month sales forecast |
+
 
 ---
 
@@ -166,14 +158,17 @@ graph TD
 ### 🎯 Objective
 Predict next-month sales trends and drivers of profitability.
 
-| Step | Task | Tools |
-|------|------|-------|
-| **1. Data Prep** | Extract 3-year sales history | SQL / PySpark |
-| **2. Feature Engineering** | Lag features, moving averages | Python / pandas |
-| **3. Model Training** | Linear / XGBoost Regression | scikit-learn |
-| **4. Evaluation** | RMSE, MAPE, R² | sklearn.metrics |
-| **5. Deployment** | Save to `ml.sales_forecast` | Databricks ML |
-| **6. Visualization** | Integrate in Power BI | Power BI Forecast Chart |
+## 📊 Power BI Analytics & Visualization — How I Designed My Dashboards
+
+| Page | Purpose / Insights | Key Visuals (Built by Me) |
+|------|--------------------|----------------------------|
+| 🏠 **Home Summary** | Executive KPI overview — quick snapshot of Total Sales, Profit, Quantity & Avg. Profit Margin | KPI Cards, Multi-row Cards, Region & Category Slicers |
+| 🗺️ **Regional Insights** | Analyze sales and profit distribution across states and regions | Filled Map (Geo Heatmap), Bar Chart by Region, Tooltip Drill-through |
+| 🧍 **Customer Analytics** | Identify top-performing customers and segments driving sales | Top 10 Customers Bar Chart, Customer Segment Pie, Dynamic RANKX Table |
+| 📦 **Product Insights** | Measure product category/sub-category performance and profitability | TreeMap by Category/Sub-category, Profit vs Discount Scatter Chart |
+| 📈 **Monthly Trends** | Visualize sales & profit trend over time and compare year-over-year | Line Chart (Sales & Profit by Month), Area Chart, Time Slicer |
+| 🚚 **Shipping Performance** | Compare shipping modes and delivery efficiency | Clustered Column Chart (Sales vs Profit by Ship Mode), Average Delivery Days KPI |
+| 🔮 **Forecasting & Predictive Analysis** | Project future sales and profit using forecasting algorithms | Line Chart with Forecast, Confidence Interval, Prophet Model Integration Output |
 
 ---
 
