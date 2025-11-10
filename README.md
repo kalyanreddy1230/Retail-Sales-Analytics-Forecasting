@@ -147,17 +147,6 @@ graph TD
 
 ---
 
-## 📊 Power BI Analytics & Visualization
-
-
-
----
-
-## 🤖 Machine Learning & Forecasting
-
-### 🎯 Objective
-Predict next-month sales trends and drivers of profitability.
-
 ## 📊 Power BI Analytics & Visualization — How I Designed My Dashboards
 
 | **Page** | **Purpose / Insights Delivered** | **Key Visuals & Custom Features (Designed by Me)** |
@@ -171,8 +160,6 @@ Predict next-month sales trends and drivers of profitability.
 | 🔮 **Forecasting & Predictive Analysis** | Predict future sales and profit using time-series models integrated with the Databricks forecasting pipeline. Supports data-driven target planning. | Line Chart with Prophet Forecast & Confidence Intervals, Trend Indicator Cards (↑ / ↓), Toggle for Historical vs Forecast View, Power BI–Python Integration |
 
 ---
-
-
 
 ## 🧭 Executive Overview
 <img width="738" height="399" alt="Screenshot 2025-11-10 at 10 07 10 AM" src="https://github.com/user-attachments/assets/2254c4ce-9ec7-45cf-96e0-37814031b95c" />
@@ -198,33 +185,54 @@ Predict next-month sales trends and drivers of profitability.
 <img width="809" height="477" alt="Screenshot 2025-11-10 at 10 08 22 AM" src="https://github.com/user-attachments/assets/830dbe7c-b332-4544-ac7f-f6a314b7955a" />
 
 
----
+--
 
-## 💡 Insights
-- **West & Central** regions dominate sales volume but with lower margins.  
-- **Technology category** drives highest profit ratio (~22%).  
-- **Corporate segment** shows best repeat purchase rate.  
-- Clear **Q4 seasonality** trend in sales.  
-- **Standard Class** shipping = high volume, low profit.
+### 🎯 Objective
+Predict **next-month sales and profit trends** across regions, categories & segments — enabling data-driven inventory and marketing decisions.
 
 ---
 
-## 🔮 Next Steps
-1. Integrate **Gen-AI chatbot** for natural-language queries.  
-2. Extend ML to **multi-step time-series forecasting (Prophet/XGBoost)**.  
-3. Automate ETL with **Databricks Workflows / Airflow**.  
-4. Publish Power BI dashboard with scheduled refresh.
+### ⚙️ ML Pipeline Overview
+| Step | Component | Description |
+|------|------------|-------------|
+| **1. Data Source** | Gold Layer (`vw_monthly_sales_trend`) | Aggregated monthly sales and profit data |
+| **2. Data Prep** | PySpark / Pandas | Transform and aggregate features for modeling |
+| **3. Feature Engineering** | Lag features, rolling averages | Capture trend and seasonality patterns |
+| **4. Model** | Prophet (Time-Series Forecasting) | Predict future monthly sales and profit |
+| **5. Metrics** | RMSE, MAPE, R² | Evaluate forecast accuracy |
+| **6. Visualization** | Power BI Forecast Page | Display historical + predicted trends |
 
 ---
 
-## 🧾 Notes
-- Surrogate keys (`_sk`) via `ROW_NUMBER()`  
-- `TRY_CAST` for safe type conversion  
-- Kimball Star Schema adopted for dim/fact modeling  
-- `NULLIF` used to avoid divide-by-zero in margins  
-- Delta Lake provides ACID guarantees and incremental load
+## 💬 Gen-AI Chatbot (Retail Insights Assistant)
+
+### 🎯 Objective
+Enable **natural-language data analysis** through a chatbot that connects **Databricks Gold-layer data** with **Grok-3 (xAI)** — allowing business users to ask intuitive questions like:  
+> “Which region had the highest sales last quarter?”  
+> “Predict next-month sales.”  
+> “Who are our top 5 customers?”
 
 ---
+
+### ⚙️ Architecture
+| Layer | Tool / Library | Purpose |
+|-------|----------------|----------|
+| **Backend Data** | Databricks Gold Tables | Source of truth for sales + profit data |
+| **Embeddings** | SentenceTransformer (`all-MiniLM-L6-v2`) | Converts text data into vector embeddings |
+| **Vector Store** | FAISS | Stores and retrieves embeddings for semantic search |
+| **Language Model** | Grok-3 (xAI API) | Generates context-aware analytical answers |
+| **UI Layer** | Streamlit | User-friendly chatbot interface |
+| **Integration** | Python + REST API | End-to-end connection between Databricks ↔ FAISS ↔ Grok |
+---
+```mermaid
+graph LR
+A[Databricks Gold Tables] --> B[Fetch & Convert to Text]
+B --> C[Embed using MiniLM-L6-v2]
+C --> D[Store in FAISS Vector Index]
+E[User Query] --> F[Semantic Search in FAISS]
+F --> G[Retrieve Top Context]
+G --> H[Grok-3 API Call]
+H --> I[Streamlit UI Displays Answer]
 
 ## 📂 Repository Structure
 ```
