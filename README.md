@@ -255,10 +255,4 @@ Predict next-month sales trends and drivers of profitability.
 
 ---
 
-## 🚀 Summary
-✅ Complete Retail Data Engineering pipeline in Databricks  
-✅ Medallion Architecture (Bronze → Silver → Gold)  
-✅ Power BI Dashboards for Executive & Regional Insights  
-✅ ML Forecasting for Next-Month Sales  
-✅ Future-Ready for Gen-AI Analytics Integration
 
