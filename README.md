@@ -225,31 +225,35 @@ Enable **natural-language data analysis** through a chatbot that connects **Data
 | **Integration** | Python + REST API | End-to-end connection between Databricks ↔ FAISS ↔ Grok |
 ---
 
-### 📂 Retail_Sales_Analytics_Forecasting/
+📂 Retail_Sales_Analytics_Forecasting/
 ├── databricks/
 │   ├── bronze/
-│   │   └── bronze_superstore_raw.sql
+│   │   └── bronze_superstore_raw.sql                # Raw data ingestion script
 │   ├── silver/
-│   │   └── silver_superstore_cleaned.sql
+│   │   └── silver_superstore_cleaned.sql            # Data cleansing and standardization
 │   └── gold/
-│       ├── gold_dimensions_facts.sql
-│       ├── gold_views_analytics.sql
-│       └── gold_validation_checks.sql
+│       ├── gold_dimensions_facts.sql                # Star schema (dimension + fact tables)
+│       ├── gold_views_analytics.sql                 # Analytical views for BI
+│       └── gold_validation_checks.sql               # Row counts and ETL validation checks
+│
 ├── ml/
-│   ├── sales_forecast_notebook.ipynb
-│   └── model_evaluation_metrics.csv
+│   ├── sales_forecast_notebook.ipynb                # Prophet-based time-series forecasting
+│   ├── profit_classification_notebook.ipynb         # Logistic/Random Forest profit classifier
+│   └── model_evaluation_metrics.csv                 # Evaluation metrics (RMSE, MAPE, Accuracy)
+│
 ├── powerbi/
-│   ├── Retail_Sales_Analytics.pbix
+│   ├── Retail_Sales_Analytics.pbix                  # Power BI dashboard file
 │   └── assets/
-│       ├── home_summary.png
-│       ├── regional_performance.png
-│       ├── customer_insights.png
-│       ├── product_performance.png
-│       ├── shipping_performance.png
-│       └── sales_forecast.png
-└── README.md
-```
-
----
+│       ├── home_summary.png                         # Executive overview page
+│       ├── regional_performance.png                 # Region-wise sales heatmap
+│       ├── customer_insights.png                    # Customer segmentation insights
+│       ├── product_performance.png                  # Product category performance
+│       ├── shipping_performance.png                 # Shipping mode efficiency
+│       └── sales_forecast.png                       # Forecasting visual from ML Prophet
+│
+├── chatbot/
+│   └── retail_sales_analytics_chatbot.py            # Streamlit + Grok-3 Gen-AI Chatbot app
+│
+└── README.md                                        # Project documentation and setup guide
 
 
