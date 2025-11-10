@@ -170,6 +170,31 @@ Predict next-month sales trends and drivers of profitability.
 | 🚚 **Shipping Performance** | Compare shipping modes and delivery efficiency | Clustered Column Chart (Sales vs Profit by Ship Mode), Average Delivery Days KPI |
 | 🔮 **Forecasting & Predictive Analysis** | Project future sales and profit using forecasting algorithms | Line Chart with Forecast, Confidence Interval, Prophet Model Integration Output |
 
+
+🧭 Executive Overview
+<img width="738" height="399" alt="Screenshot 2025-11-10 at 10 07 10 AM" src="https://github.com/user-attachments/assets/2254c4ce-9ec7-45cf-96e0-37814031b95c" />
+
+
+🌍 Regional Performance
+<img width="832" height="465" alt="Screenshot 2025-11-10 at 10 07 31 AM" src="https://github.com/user-attachments/assets/1734f463-e594-4d96-8a4c-baf03c153425" />
+
+
+📈 Time Series / Trends
+<img width="832" height="465" alt="Screenshot 2025-11-10 at 10 07 39 AM" src="https://github.com/user-attachments/assets/195348d7-ef6d-4d43-a8d5-60a290895d9c" />
+
+
+🧍‍♂️ Customer Insights
+<img width="833" height="469" alt="Screenshot 2025-11-10 at 10 07 49 AM" src="https://github.com/user-attachments/assets/38461f7a-b139-46e3-b0ed-e99da1741a7b" />
+
+
+📦 Product Performance
+<img width="758" height="477" alt="Screenshot 2025-11-10 at 10 08 05 AM" src="https://github.com/user-attachments/assets/18a5302f-9a80-44ac-b8a1-def093f1ca61" />
+
+
+🚚 Shipping Efficiency
+<img width="809" height="477" alt="Screenshot 2025-11-10 at 10 08 22 AM" src="https://github.com/user-attachments/assets/830dbe7c-b332-4544-ac7f-f6a314b7955a" />
+
+
 ---
 
 ## 💡 Insights
