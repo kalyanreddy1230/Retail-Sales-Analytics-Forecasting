@@ -224,18 +224,7 @@ Enable **natural-language data analysis** through a chatbot that connects **Data
 | **UI Layer** | Streamlit | User-friendly chatbot interface |
 | **Integration** | Python + REST API | End-to-end connection between Databricks ↔ FAISS ↔ Grok |
 ---
-```mermaid
-graph LR
-A[Databricks Gold Tables] --> B[Fetch & Convert to Text]
-B --> C[Embed using MiniLM-L6-v2]
-C --> D[Store in FAISS Vector Index]
-E[User Query] --> F[Semantic Search in FAISS]
-F --> G[Retrieve Top Context]
-G --> H[Grok-3 API Call]
-H --> I[Streamlit UI Displays Answer]
 
-## 📂 Repository Structure
-```
 📂 Retail_Sales_Analytics_Forecasting/
 ├── databricks/
 │   ├── bronze/
