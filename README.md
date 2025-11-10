@@ -160,38 +160,41 @@ Predict next-month sales trends and drivers of profitability.
 
 ## 📊 Power BI Analytics & Visualization — How I Designed My Dashboards
 
-| Page | Purpose / Insights | Key Visuals (Built by Me) |
-|------|--------------------|----------------------------|
-| 🏠 **Home Summary** | Executive KPI overview — quick snapshot of Total Sales, Profit, Quantity & Avg. Profit Margin | KPI Cards, Multi-row Cards, Region & Category Slicers |
-| 🗺️ **Regional Insights** | Analyze sales and profit distribution across states and regions | Filled Map (Geo Heatmap), Bar Chart by Region, Tooltip Drill-through |
-| 🧍 **Customer Analytics** | Identify top-performing customers and segments driving sales | Top 10 Customers Bar Chart, Customer Segment Pie, Dynamic RANKX Table |
-| 📦 **Product Insights** | Measure product category/sub-category performance and profitability | TreeMap by Category/Sub-category, Profit vs Discount Scatter Chart |
-| 📈 **Monthly Trends** | Visualize sales & profit trend over time and compare year-over-year | Line Chart (Sales & Profit by Month), Area Chart, Time Slicer |
-| 🚚 **Shipping Performance** | Compare shipping modes and delivery efficiency | Clustered Column Chart (Sales vs Profit by Ship Mode), Average Delivery Days KPI |
-| 🔮 **Forecasting & Predictive Analysis** | Project future sales and profit using forecasting algorithms | Line Chart with Forecast, Confidence Interval, Prophet Model Integration Output |
+| **Page** | **Purpose / Insights Delivered** | **Key Visuals & Custom Features (Designed by Me)** |
+|-----------|----------------------------------|----------------------------------------------------|
+| 🏠 **Home Summary / Executive Overview** | Centralized KPI view providing a snapshot of overall business health — Total Sales, Profit, Quantity, and Avg Profit Margin. Built with dynamic filters to drill into specific regions or categories. | KPI Cards (Total Sales, Profit, Quantity, Margin %), Multi-row Cards, Region & Category Slicers, Dynamic Bookmarks for Quick Navigation |
+| 🌍 **Regional Insights / Geographical Performance** | Evaluate regional and state-level performance to identify top and low-performing areas. Used geo-visuals to track profit density and sales distribution. | Filled Map (Geo Heatmap using state boundaries), Stacked Bar Chart by Region, Tooltip Drill-through to State Performance Page, Region Filter Buttons |
+| 📈 **Monthly Trends / Time Series Analysis** | Reveal sales and profit trends over time and compare YoY growth rates. Supports data-driven seasonal forecasting decisions. | Line Chart (Sales & Profit by Month), Area Chart for Cumulative Trend, Year Slicer, YOY Comparison Card, Dynamic Forecast Toggle |
+| 📦 **Product Performance / Category Analytics** | Analyze category and sub-category profitability to spot top and bottom performers and understand discount impacts. | TreeMap (Category → Sub-Category), Profit vs Discount Scatter Plot, Category Filter Dropdown, Conditional Formatting for Low Margins |
+| 🧍‍♂️ **Customer Insights / Segment Analysis** | Identify top customers, segment profitability, and spending patterns to optimize retention strategies. | Top 10 Customers Bar Chart (using RANKX), Customer Segment Pie Chart, Dynamic Table with Profit Margin % and Sales per Customer, Cross-highlight Interactions |
+| 🚚 **Shipping Efficiency / Operational Insights** | Monitor shipping modes and logistics performance to measure delivery efficiency and profit impacts. | Clustered Column Chart (Sales vs Profit by Ship Mode), Delivery Days KPI Card, Shipping Cost vs Profit Scatter, Ship Mode Filter |
+| 🔮 **Forecasting & Predictive Analysis** | Predict future sales and profit using time-series models integrated with the Databricks forecasting pipeline. Supports data-driven target planning. | Line Chart with Prophet Forecast & Confidence Intervals, Trend Indicator Cards (↑ / ↓), Toggle for Historical vs Forecast View, Power BI–Python Integration |
+
+---
 
 
-🧭 Executive Overview
+
+## 🧭 Executive Overview
 <img width="738" height="399" alt="Screenshot 2025-11-10 at 10 07 10 AM" src="https://github.com/user-attachments/assets/2254c4ce-9ec7-45cf-96e0-37814031b95c" />
 
 
-🌍 Regional Performance
+## 🌍 Regional Performance
 <img width="832" height="465" alt="Screenshot 2025-11-10 at 10 07 31 AM" src="https://github.com/user-attachments/assets/1734f463-e594-4d96-8a4c-baf03c153425" />
 
 
-📈 Time Series / Trends
+## 📈 Time Series / Trends
 <img width="832" height="465" alt="Screenshot 2025-11-10 at 10 07 39 AM" src="https://github.com/user-attachments/assets/195348d7-ef6d-4d43-a8d5-60a290895d9c" />
 
 
-🧍‍♂️ Customer Insights
+## 🧍‍♂️ Customer Insights
 <img width="833" height="469" alt="Screenshot 2025-11-10 at 10 07 49 AM" src="https://github.com/user-attachments/assets/38461f7a-b139-46e3-b0ed-e99da1741a7b" />
 
 
-📦 Product Performance
+## 📦 Product Performance
 <img width="758" height="477" alt="Screenshot 2025-11-10 at 10 08 05 AM" src="https://github.com/user-attachments/assets/18a5302f-9a80-44ac-b8a1-def093f1ca61" />
 
 
-🚚 Shipping Efficiency
+## 🚚 Shipping Efficiency
 <img width="809" height="477" alt="Screenshot 2025-11-10 at 10 08 22 AM" src="https://github.com/user-attachments/assets/830dbe7c-b332-4544-ac7f-f6a314b7955a" />
 
 
