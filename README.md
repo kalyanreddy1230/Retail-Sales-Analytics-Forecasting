@@ -225,7 +225,7 @@ Enable **natural-language data analysis** through a chatbot that connects **Data
 | **Integration** | Python + REST API | End-to-end connection between Databricks ↔ FAISS ↔ Grok |
 ---
 
-📂 Retail_Sales_Analytics_Forecasting/
+### 📂 Retail_Sales_Analytics_Forecasting/
 ├── databricks/
 │   ├── bronze/
 │   │   └── bronze_superstore_raw.sql
